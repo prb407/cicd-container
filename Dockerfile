@@ -8,6 +8,7 @@ RUN apt-get update && \
         curl \
     && pip3 install --upgrade pip \
     && apt-get clean
+RUN apt-get -y install zip
 RUN curl -sL https://deb.nodesource.com/setup_12.x  | bash -
 RUN apt-get -y install nodejs
 RUN apt install -y --no-install-recommends yarn
